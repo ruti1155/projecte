@@ -1,8 +1,8 @@
 /* styles.css */
 
 body {
-    font-family:Helvetica;
-    background-color: #ff0000;
+    font-family: 'Helvetica', sans-serif; /* Usar Helvetica */
+    background-color: #eeafdb; /* Color de fondo */
     margin: 0;
     padding: 20px;
     color: #000000;
