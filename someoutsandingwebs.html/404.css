@@ -1,74 +1,70 @@
-/* Estilos generales del body */
+/* Establecer la imagen de fondo en todo el body */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+    background-image: url('assets/lola.jpg');  
+    background-size: cover;                     
+    background-position: center center;         
+    background-attachment: fixed;                
+    margin: 0;                                  
+    height: 100vh;                               
 }
 
-/* Contenedor principal de la página de 404 */
+/* Estilo para la imagen */
+.image-container {
+    text-align: center; 
+    margin-bottom: 20px;  
+    position: relative;
+}
+
+/* Estilo para la tarjeta 404 */
 .container {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    width: 100%;
-    animation: fadeIn 0.5s ease-in-out;
+    text-align: center;  
+    padding: 40px 20px;    
+    border: 3px solid #ffffff;  
+    border-radius: 15px;       
+    width: 200px;             
+    margin: 0 auto;          
+    margin-top: 300px;      
+    background-color: rgba(255, 0, 170, 0.8); 
+    background-image: url('assets/lolita.jpg'); 
+    background-size: cover;
+    background-position: center center; 
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); 
+    position: relative;
+    z-index: 1; 
+    color: white;
 }
 
-/* Título 404 */
-h1 {
-    font-size: 120px;
-    color: #CE4676;
-    margin: 0;
-    font-weight: bold;
-    letter-spacing: -2px;
+
+
+/* Estilo para el título (h1) */
+.container h1 {
+    font-size: 48px;  
+    margin: 0;        
 }
 
-/* Subtítulo */
-h2 {
-    font-size: 24px;
-    color: #333;
-    margin: 10px 0;
+/* Estilo para el subtítulo (h2) */
+.container h2 {
+    font-size: 24px;   
+    margin: 10px 0;  
 }
 
-/* Descripción */
-p {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 20px;
+/* Estilo para el párrafo (p) */
+.container p {
+    font-size: 16px;  
+    margin: 20px 0;   
 }
 
-/* Estilo del botón de regreso */
+/* Estilo para el botón */
 .button {
-    background-color: #CE4676;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
     display: inline-block;
-    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    background-color: #000000; 
+    color: white;             
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .button:hover {
-    background-color: #2980b9;
-}
-
-/* Animación de desvanecimiento */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+    background-color: #333333; 
 }
