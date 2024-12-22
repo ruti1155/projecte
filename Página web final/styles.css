@@ -72,3 +72,56 @@ footer p {
 img {
     border-radius: 10px; /* Bordes redondeados para imágenes */
 }
+
+/* Estilos específicos para cada imagen */
+
+/* Imagen principal (centrada en la página) */
+.imagen-krilena {
+    border-radius: 40px;
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para las imágenes dentro del contenedor flex (una al lado de la otra) */
+.imagenes-proyectos {
+    display: flex;
+    justify-content: space-between center;
+    margin: 0px 0;
+    gap: 200px;
+}
+
+.imagen-la-chula {
+    border-radius: 40px;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Imagen centrada (aplica la clase para centrarla) */
+.imagen-centrada {
+    border-radius: 40px;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo para la imagen del proyecto (ejemplo, más pequeño) */
+.imagen-proyecto {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Imagen sobre mí */
+.imagen-about-me {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
