@@ -8,6 +8,10 @@ body {
     margin-right: 0px; /* Margen a la derecha */
     overflow-x: hidden;
 }
+/* Aplica el cursor personalizado a todo el documento */
+body {
+  cursor: url('fotos/starschema_estrella_13689.png'), 16 16 auto;
+}
 
 header {
     display: flex;
