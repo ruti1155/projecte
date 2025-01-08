@@ -2,8 +2,8 @@
 .imagenes-superiores {
     display: flex;
     flex-direction: column;
-    gap: 2rem; /* Espacio entre filas */
-    margin-top: 3rem; /* Espacio sobre el "about me" */
+    gap: 0rem; /* Espacio entre filas */
+    margin-top: 0rem; /* Espacio sobre el "about me" */
 }
 
 .fila-imagenes {
@@ -38,7 +38,7 @@
 
 /* Estilos para la navegación y otros elementos de la página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: inherit, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
     line-height: 1.6;
 }
 
@@ -69,3 +69,25 @@ main {
 h1 {
     color: #333;
 }
+/* Estilos para el pie de página */
+footer {
+    background-color: #99a8a8;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+  
+  footer p {
+    margin: 5px 0;
+    color: #000;
+  }
+  
+  footer a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;}
