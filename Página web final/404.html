@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .error-page {
+            z-index: 10;
+            width: 300px;
+            height: 200px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .star {
+            position: absolute;
+            font-size: 2rem;
+            animation: moveStar 5s linear infinite;
+            z-index: 1;
+        }
+
+        .message {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        @keyframes moveStar {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(100vw, 100vh);
+            }
+        }
+
+        /* Animaciones individuales para cada estrella */
+        .star1 {
+            animation: moveStar1 5s linear infinite;
+        }
+
+        @keyframes moveStar1 {
+            0% {
+                top: 0;
+                left: 0;
+            }
+            100% {
+                top: 100vh;
+                left: 100vw;
+            }
+        }
+
+        .star2 {
+            animation: moveStar2 5s linear infinite;
+        }
+
+        @keyframes moveStar2 {
+            0% {
+                top: 0;
+                right: 0;
+            }
+            100% {
+                top: 100vh;
+                right: 100vw;
+            }
+        }
+
+        .star3 {
+            animation: moveStar3 5s linear infinite;
+        }
+
+        @keyframes moveStar3 {
+            0% {
+                bottom: 0;
+                left: 0;
+            }
+            100% {
+                bottom: 100vh;
+                left: 100vw;
+            }
+        }
+
+        .star4 {
+            animation: moveStar4 5s linear infinite;
+        }
+
+        @keyframes moveStar4 {
+            0% {
+                bottom: 0;
+                right: 0;
+            }
+            100% {
+                bottom: 100vh;
+                right: 100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div class="message">
+            <h1>Error 404</h1>
+            <p>Por su bien, vuelve a cargar la página, un besito.</p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const stars = [
+                { className: 'star star1' },
+                { className: 'star star2' },
+                { className: 'star star3' },
+                { className: 'star star4' }
+            ];
+
+            stars.forEach((starData, index) => {
+                const star = document.createElement("div");
+                star.className = starData.className;
+                star.innerText = "⭐";
+                document.body.appendChild(star);
+            });
+        });
+    </script>
+</body>
+</html>
+
+
