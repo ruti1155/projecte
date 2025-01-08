@@ -2,10 +2,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f6eff2;
-    color: #000;
-    margin-left: 90px;  /* Margen a la izquierda */
-    margin-right: 90px; /* Margen a la derecha */
+    background-color: #000000;
+    color: #ffffff;
+    margin-left: 0px;  /* Margen a la izquierda */
+    margin-right: 0px; /* Margen a la derecha */
 }
 
 header {
@@ -27,26 +27,85 @@ header nav a:hover {
     text-decoration: underline;
 }
 
+/* Estilos específicos para cada imagen */
+
+/* Imagen principal (centrada en la página) */
+.imagen-krilena {
+    border-radius: 75px;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 150px; /* Mueve hacia abajo */
+    left: 390px; /* Mueve hacia la derecha */
+    width: 1500px; /* Ancho específico */
+    height: 650px; /* Alto específico */
+    }
+
+
+
+
+    .imagen-la-chula {
+        border-radius: 20px;
+        max-width: 100%;
+        display: block;
+        position: absolute; /* Cambiado a absolute */
+        top: 155px; /* Mueve hacia abajo */
+        left: 90px; /* Mueve hacia la derecha */
+        width: 250px; /* Ancho específico */
+        height: 250px; /* Alto específico */
+    }
+
+
+.imagen-transporte {
+        border-radius: 20px;
+        max-width: 1000px;
+        display: block;
+        position: absolute;
+        top: 525px; /* Mueve hacia abajo */
+        left: 90px; /* Mueve hacia la derecha */
+        width: 250px; /* Ancho específico */
+        height: 250px; /* Alto específico */
+        }
+
+.about-me {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #FFF;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            border: 1px solid #000;
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+.project-krilena {
+            background-color: #FFF;
+            border: 1px solid #000;
+            padding: 20px;
+            margin: 10px 0;
+            width: 80%;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 10px; /* Bordes redondeados */
+            top: 2000px; /* Mueve hacia abajo */
+            left: 90px; /* Mueve hacia la derecha */
+            width: 250px; /* Ancho específico */
+            height: 250px; /* Alto específico */
+        }
+    
+        /* Imagen sobre mí */
+.imagen-about-me {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+        
 .contact-info {
     text-align: right;
 }
 
-.main-content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.project {
-    background-color: #FFF;
-    border: 1px solid #000;
-    padding: 20px;
-    margin: 10px 0;
-    width: 80%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 10px; /* Bordes redondeados */
-}
 
 footer {
     background-color: #A1D7D6;
@@ -56,72 +115,4 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-.about-me {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #FFF;
-    padding: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    border: 1px solid #000;
-    border-radius: 10px; /* Bordes redondeados */
-}
-
-/* Bordes redondeados para las imágenes */
-img {
-    border-radius: 10px; /* Bordes redondeados para imágenes */
-}
-
-/* Estilos específicos para cada imagen */
-
-/* Imagen principal (centrada en la página) */
-.imagen-krilena {
-    border-radius: 40px;
-    width: 100%;
-    max-width: 1000px;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Estilos para las imágenes dentro del contenedor flex (una al lado de la otra) */
-.imagenes-proyectos {
-    display: flex;
-    justify-content: space-between center;
-    margin: 0px 0;
-    gap: 200px;
-}
-
-.imagen-la-chula {
-    border-radius: 40px;
-    width: 100%;
-    max-width: 300px;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Imagen centrada (aplica la clase para centrarla) */
-.imagen-centrada {
-    border-radius: 40px;
-    width: 100%;
-    max-width: 300px;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Estilo para la imagen del proyecto (ejemplo, más pequeño) */
-.imagen-proyecto {
-    width: 100%;
-    max-width: 600px;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Imagen sobre mí */
-.imagen-about-me {
-    border-radius: 20px;
-    width: 100%;
-    max-width: 300px;
-    display: block;
-    margin: 0 auto;
 }
