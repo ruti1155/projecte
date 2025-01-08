@@ -204,6 +204,7 @@ body {
     overflow-x: hidden;
 }
 
+
 /* Estilos para la sección "Sobre mí" */
 .about-me {
     display: flex;
@@ -229,118 +230,89 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-/* Imagen sobre mí */
-.imagen-about-me {
-    border-radius: 20px;
-    max-width: 65.8%;
-    width: 70%;
+/* Estilo para centrar la imagen trans garcia*/
+.centrar-imagen {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Imagen sobre mí */
-.imagen-about-me {
-    border-radius: 20px;
-    max-width: 65.8%;
-    width: 70%;
-    display: block;
-    margin-left: -10%; /* Mueve la imagen 10% hacia la izquierda */
-}
-
-/* Estilos para la sección "Sobre mí" */
-.about-me {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 70%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #FFF;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
-    color: black;
-}
-
-.left-column, .right-column {
-    flex: 1;
-    padding: 20px;
-}
-
-.right-column {
+/* Asegurar que el contenedor tenga suficiente espacio */
+.contenedor-imagen {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px; /* Ajusta según sea necesario */
 }
 
-/* Media queries para dispositivos móviles y tabletas */
-@media (max-width: 768px) {
-    .about-me {
-        flex-direction: column;
-    }
-
-    .left-column, .right-column {
-        padding: 10px;
-    }
-
-    .left-column p {
-        font-size: 14px;
-    }
-
-    .imagen-about-me {
-        margin-left: 0; /* Restablece el margen izquierdo en pantallas pequeñas */
-    }
+/* Estilo para la tarjeta blanca */
+.tarjeta-blanca {
+    margin-top: 50px; /* Espacio adicional encima de la tarjeta blanca */
+    margin-bottom: 50px; /* Espacio adicional debajo de la tarjeta blanca */
+}
+/* Estilo para centrar la imagen */
+.centrar-imagen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
-/* Estilos para el formulario de contacto */
-.contact-form {
-    width: 70%;
-    margin: 20px auto;
-    background-color: #FFF;
-    padding: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    border: 1px solid #000;
-    border-radius: 30px; /* Bordes redondeados */
-    color: black;
-}
-
-.contact-form form {
+/* Asegurar que el contenedor tenga suficiente espacio */
+.contenedor-imagen {
     display: flex;
-    flex-direction: column;
-    gap: 10px; /* Espacio entre los elementos del formulario */
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Ajusta según sea necesario */
+
 }
 
-.contact-form label {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Imagen sobre mí */
+.imagen-about-me {
+    border-radius: 20px;
+    max-width: 300px;
     width: 100%;
-    box-sizing: border-box;
-}
-
-.contact-form button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #000;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #333;
-}
-
-
-/* Información de contacto */
-.contact-info {
-    text-align: right;
-}
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-container { margin-top: 50px; width: 80%; max-width: 900px; } .about-card { background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; margin-bottom: 50px; } .profile-photo { width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px; } .contact-section { background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); width: 80%; max-width: 900px; margin-bottom: 50px; } .contact-section h2 { text-align: left; margin-left: 0px; /* Ajusta este valor según lo necesario */ }form { display: flex; flex-direction: column; } label { margin: 10px 0 5px; } input, textarea { padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; width: 100%; } button { padding: 10px 20px; background-color: #5cb85c; border: none; color: white; border-radius: 5px; cursor: pointer; margin-top: 10px; } button:hover { background-color: #4cae4c}
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #99a8a8;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+  
+  footer p {
+    margin: 5px 0;
+    color: #000;
+  }
+  
+  footer a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media queries para asegurar que la sección "Sobre mí" sea responsive */
+  @media (max-width: 768px) {
+    .about-me {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-me .left-column {
+      margin-right: 0;
+    }
+  
+    .about-me .right-column {
+      margin-top: 20px;
+    }
+  }

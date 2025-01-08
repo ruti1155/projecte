@@ -1,0 +1,71 @@
+/* Estilo para las imágenes superiores */
+.imagenes-superiores {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Espacio entre filas */
+    margin-top: 3rem; /* Espacio sobre el "about me" */
+}
+
+.fila-imagenes {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; /* Espacio entre imágenes en una fila */
+}
+
+.imagen-cuadrada {
+    width: calc(45% - 1rem); /* Ancho de las imágenes, ajustado por el espacio, ahora más grande */
+    height: auto;
+}
+
+/* Estilos para la introducción */
+.introduccion {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+/* Medios de respuesta para ajustar en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .imagen-cuadrada {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .fila-imagenes {
+        flex-direction: column;
+    }
+}
+
+/* Estilos para la navegación y otros elementos de la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #a6b2b2;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
