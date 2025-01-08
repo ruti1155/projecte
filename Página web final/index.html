@@ -13,7 +13,7 @@
                  <div> 
                     <h1>Ruth Garcia</h1> 
                 </div>
-                 <nav> <a href="#about">ABOUT ME</a> 
+                 <nav>
                     <a href="#contact">CONTACTO</a> 
                     <a href="#proyectos">PROYECTOS</a>
                     <a href="web.html">WEB
@@ -63,8 +63,26 @@
         </div>
         
     </div>
-    <div class="about-container"> <div class="about-card"> <img src="fotos/ruth.png" alt="Foto de Ruth" class="profile-photo"> <div class="about-content"> <h2>Sobre mí</h2> <p>Mi nombre es Ruth, tengo 21 años y soy de Valencia. Actualmente estoy cursando el cuarto curso de Diseño audiovisual e ilustración en UDIT, Madrid.</p> <p>Soy muy polifacética y no me cierro a ninguna vía del diseño. Soy resolutiva y trabajadora.</p> </div> </div> </div> <div class="contact-section"> <h2>Contacta conmigo</h2> <form action="#" method="post"> <label for="name">Nombre:</label> <input type="text" id="name" name="name" required> <label for="email">Correo:</label> <input type="email" id="email" name="email" required> <label for="message">Mensaje:</label> <textarea id="message" name="message" rows="4" required></textarea> <button type="submit">Contáctame</button> </form> </div>
-  <!-- Footer -->
+     <div id=" class="about-container"> <div class="about-card"> <img src="fotos/ruth.png" alt="Foto de Ruth" class="profile-photo"> <div class="about-content"> <h2>Sobre mí</h2> <p>Mi nombre es Ruth, tengo 21 años y soy de Valencia. Actualmente estoy cursando el cuarto curso de Diseño audiovisual e ilustración en UDIT, Madrid.</p> <p>Soy muy polifacética y no me cierro a ninguna vía del diseño. Soy resolutiva y trabajadora.</p> </div> </div> </div> 
+    <main>
+        <section id="contact" class="contact-section">
+          <div class="large-card">
+            <h2>¡No dudes en contactar conmigo!</h2>
+            <form action="send_form.php" method="post" class="contact-form">
+              <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="tuemail@gmail.com" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+              </div>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      
   <footer>
     <p>&copy; 2025 Ruth. All rights reserved.</p>
     <p>Created with ❤️ by Ruth</p>
