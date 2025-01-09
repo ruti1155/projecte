@@ -167,6 +167,15 @@ form button {
 form button:hover {
     background: #555;
 }
+.valencia-text {
+    font-size: 16px; /* Ajusta el tamaño según tus necesidades */
+    text-decoration: yes; /* Quitar subrayado */
+    color: inherit; /* Mantener el color del texto */
+}
+
+a {
+    color: inherit; /* Hace que los enlaces hereden el color del texto circundante */
+}
 
 footer {
     background: #333;
