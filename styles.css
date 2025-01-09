@@ -20,7 +20,7 @@ header h1 {
     font-size: 4rem;
     margin: 0;
 }
-
+/* ANIMACION PRINCIPAL */
 .typewriter {
     overflow: hidden;
     border-right: .15em solid rgb(255, 0, 123);
@@ -75,7 +75,7 @@ section {
 
 .gallery .item img {
     width: 300px;
-    height: 300px; /* Altura fija para mantener el mismo tamaño */
+    height: 300px; 
     border-radius: 10px;
     object-fit: cover;
 }
@@ -128,12 +128,12 @@ section {
     height: auto;
     animation: spin 10s linear infinite;
 }
-
+/* ANIMACION ESTRELLAS */
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-
+/* SOBRE MI ANIMACION */
 @keyframes wave {
     0% { transform: rotate(0deg); }
     25% { transform: rotate(10deg); }
@@ -167,9 +167,10 @@ form button {
 form button:hover {
     background: #555;
 }
+/*enlace valencia */
 .valencia-text {
     font-size: 16px; /* Ajusta el tamaño según tus necesidades */
-    text-decoration: yes; /* Quitar subrayado */
+    text-decoration: yes; /* subrayado */
     color: inherit; /* Mantener el color del texto */
 }
 
@@ -187,7 +188,7 @@ footer {
     bottom: 0;
 }
 
-/* Media Queries para diseño responsive */
+/* MEDIA QUERIES DISEÑO RESPONSIVE */
 @media (max-width: 768px) {
     header, footer {
         padding: 0.5rem;
